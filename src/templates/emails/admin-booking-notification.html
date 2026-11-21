@@ -1,0 +1,23 @@
+{{#> base headerTitle="New Booking Alert" currentYear=currentYear}}
+  {{#*inline "content"}}
+    <h2 class="section-title">New Booking Received</h2>
+    
+    <p>A new booking has been made on the platform. Here are the details:</p>
+    
+    <div class="highlight-box">
+      <p><strong>Booking ID:</strong> #{{bookingId}}</p>
+      <p><strong>Package:</strong> {{packageName}}</p>
+      <p><strong>Customer:</strong> {{customerName}}</p>
+      <p><strong>Email:</strong> {{customerEmail}}</p>
+      <p><strong>Date:</strong> {{bookingDate}}</p>
+    </div>
+    
+    <div class="text-center">
+      <a href="{{adminUrl}}" class="button">View Booking Details</a>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <p>This is an automated notification. Please log in to the admin dashboard to manage this booking.</p>
+  {{/inline}}
+{{/base}}

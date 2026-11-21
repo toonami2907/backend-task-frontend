@@ -1,0 +1,32 @@
+{{#> base headerTitle="Booking Confirmation" currentYear=currentYear}}
+  {{#*inline "content"}}
+    <h2 class="section-title">Thank You, {{name}}!</h2>
+    
+    <p>Your booking has been successfully confirmed. We're excited to help you with your travel plans!</p>
+    
+    <div class="highlight-box">
+      <p><strong>Booking Reference:</strong> #{{bookingId}}</p>
+      <p><strong>Service:</strong> {{packageName}}</p>
+      <p><strong>Date Booked:</strong> {{bookingDate}}</p>
+    </div>
+    
+    <div class="section">
+      <h3 class="section-title">Next Steps:</h3>
+      <ol>
+        <li>Complete your application by providing all required information</li>
+        <li>Upload any necessary documents</li>
+        <li>Track your application status in your dashboard</li>
+      </ol>
+    </div>
+    
+    <div class="text-center">
+      <a href="{{dashboardUrl}}" class="button">View Your Application</a>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <p>If you have any questions about your booking or need assistance with your application, please don't hesitate to contact our customer service team.</p>
+    
+    <p>We look forward to serving you!<br>The Team</p>
+  {{/inline}}
+{{/base}}

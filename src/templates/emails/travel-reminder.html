@@ -1,0 +1,36 @@
+{{#> base headerTitle="Your Trip is Coming Up!" currentYear=currentYear}}
+  {{#*inline "content"}}
+    <h2 class="section-title">Hello {{name}},</h2>
+    
+    <p>This is a friendly reminder that your trip is approaching soon!</p>
+    
+    <div class="highlight-box">
+      <p><strong>Destination:</strong> {{destination}}</p>
+      <p><strong>Travel Dates:</strong> {{startDate}} to {{endDate}}</p>
+      <p><strong>Days Until Departure:</strong> {{daysRemaining}}</p>
+    </div>
+    
+    <div class="section">
+      <h3 class="section-title">Pre-Travel Checklist:</h3>
+      <ul>
+        <li>Ensure your passport is valid (minimum 6 months beyond your return date)</li>
+        <li>Check visa requirements and status</li>
+        <li>Arrange transportation to/from the airport</li>
+        <li>Check weather forecast for your destination</li>
+        <li>Prepare any necessary medications and prescriptions</li>
+        <li>Notify your bank of your travel plans</li>
+        <li>Make copies of important documents</li>
+      </ul>
+    </div>
+    
+    <div class="text-center">
+      <a href="{{tripDetailsUrl}}" class="button">View Trip Details</a>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <p>If you need any assistance with last-minute preparations or have questions about your trip, our travel experts are here to help.</p>
+    
+    <p>We wish you a wonderful journey!<br>The Team</p>
+  {{/inline}}
+{{/base}}

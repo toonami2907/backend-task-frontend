@@ -1,0 +1,29 @@
+{{#> base headerTitle="Application Status Update" currentYear=currentYear}}
+  {{#*inline "content"}}
+    <h2 class="section-title">Hello {{name}},</h2>
+    
+    <p>There has been an update to your application for {{packageName}}.</p>
+    
+    <div class="highlight-box" style="background-color: {{statusColor}}; border-left-color: {{statusBorderColor}};">
+      <h3 style="margin-top: 0; color: {{statusTextColor}};">Status: {{status}}</h3>
+      <p>{{statusMessage}}</p>
+    </div>
+    
+    {{#if additionalInfo}}
+    <div class="section">
+      <h3 class="section-title">Additional Information:</h3>
+      <p>{{additionalInfo}}</p>
+    </div>
+    {{/if}}
+    
+    <div class="text-center">
+      <a href="{{applicationUrl}}" class="button">View Application Details</a>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <p>If you have any questions about your application status, please contact our support team.</p>
+    
+    <p>Best regards,<br>The Team</p>
+  {{/inline}}
+{{/base}}

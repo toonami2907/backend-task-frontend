@@ -1,0 +1,29 @@
+{{#> base headerTitle="Special Offer Just For You" currentYear=currentYear}}
+  {{#*inline "content"}}
+    <h2 class="section-title">Hello {{name}},</h2>
+    
+    <p>We're excited to share an exclusive offer with you based on your travel interests!</p>
+    
+    <div style="background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 100%); color: white; padding: 20px; border-radius: 8px; text-align: center; margin: 25px 0;">
+      <h3 style="margin-top: 0; font-size: 22px; color: white;">{{offerTitle}}</h3>
+      <p style="font-size: 18px; margin-bottom: 5px;">{{offerDescription}}</p>
+      <p style="font-size: 14px;">Use code: <strong>{{promoCode}}</strong></p>
+      <p style="font-size: 12px; margin-top: 15px;">Offer valid until: {{expiryDate}}</p>
+    </div>
+    
+    <div class="text-center">
+      <a href="{{offerUrl}}" class="button">View Offer Details</a>
+    </div>
+    
+    <div class="section" style="margin-top: 25px;">
+      <h3 class="section-title">Why We Think You'll Love This:</h3>
+      <p>{{personalizedMessage}}</p>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <p style="font-size: 12px;">This offer is personalized based on your previous travel interests. Terms and conditions apply.</p>
+    
+    <p>Happy travels!<br>The Team</p>
+  {{/inline}}
+{{/base}}

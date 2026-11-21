@@ -1,0 +1,40 @@
+{{#> base headerTitle="Your Travel Documents" currentYear=currentYear}}
+  {{#*inline "content"}}
+    <h2 class="section-title">Hello {{name}},</h2>
+    
+    <p>Great news! Your travel documents for {{packageName}} are now ready.</p>
+    
+    <div class="highlight-box">
+      <p><strong>Documents included:</strong></p>
+      <ul>
+        {{#each documents}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    
+    <div class="section">
+      <p>You can access your documents by clicking the button below. Please review all documents carefully and ensure all information is correct.</p>
+    </div>
+    
+    <div class="text-center">
+      <a href="{{documentsUrl}}" class="button">View Your Documents</a>
+    </div>
+    
+    <div class="divider"></div>
+    
+    <div class="section">
+      <h3 class="section-title">Important Reminders:</h3>
+      <ul>
+        <li>Keep digital and physical copies of all your travel documents</li>
+        <li>Check document expiration dates</li>
+        <li>Verify all personal information is correct</li>
+        <li>Review entry requirements for your destination</li>
+      </ul>
+    </div>
+    
+    <p>If you notice any discrepancies or have questions about your documents, please contact us immediately.</p>
+    
+    <p>Safe travels!<br>The Team</p>
+  {{/inline}}
+{{/base}}
